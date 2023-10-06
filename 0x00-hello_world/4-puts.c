@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -o puzzle puzzle.c && ./puzzle
+echo '#include <stdio.h> int main() { puts("Programming is like building a multilingual puzzle"); return 0; }' > puzzle.c && gcc -o puzzle puzzle.c && ./puzzle
