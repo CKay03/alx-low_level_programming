@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints the name of the program
+ * main - prints the multiplication of two args numbers
  * @argc: the number of arguments
  * @argv: array of arguments
  * Return: 0
