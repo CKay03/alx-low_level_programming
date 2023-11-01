@@ -6,7 +6,7 @@
  * created by your alloc_grid function.
  * @grid: address of the two dmensional grid
  * @height: height of the grid
- * Return: 0
+ * Return: nothing
  */
 void free_grid(int **grid, int height)
 {
@@ -17,6 +17,5 @@ void free_grid(int **grid, int height)
 	free(grid[i]);
 	}
 	free(grid);
-	return (0);
 }
 
