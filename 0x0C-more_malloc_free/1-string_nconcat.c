@@ -7,7 +7,7 @@
  * @s1: string one
  * @s2: string two
  * @n: number of elements to concatenate from s2
- * Return: nothing
+ * Return: nothin g
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s[j] = s1[j]
 	if (j >= i)
 	{
-	s[j] = s2[k]
+	s[j] = s2[k];
 	k++;
 	}
 	j++;
