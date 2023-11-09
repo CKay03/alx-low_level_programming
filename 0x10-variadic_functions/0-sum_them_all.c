@@ -5,18 +5,28 @@
  * sum_them_all - returns the sum of all its parameters
  * @n: number of parameters passed to the function
  * @...: variable number of parameters to calculate the sum
- * Return: if n == 0 - 0
- * Otherwise- the sum of all parameters
+ * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list ap;
-	unsigned int i, sum = 0;
+	unsigned int sum = 0;
+	unsigned int i;
 
-	va_start(ap, n);
+	va_list holder;
+
+	va_start(holder, n);
+
 	for (i = 0; i < n; i++)
-	sum += va_arg(ap, int);
-	va_end(ap);
-
+	{
+		if (n == 0)
+		{
+			return (0);
+		}
+		else
+		{
+			sum += va_arg(holder, const unsigned int);
+		}
+	}
+	va_end(holder);
 	return (sum);
 }
